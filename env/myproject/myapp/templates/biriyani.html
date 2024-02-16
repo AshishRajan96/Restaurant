@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Biriyani</title>
+</head>
+<body>
+<style>
+    body{
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+.container{
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+
+}
+.burger-menu {
+   padding: 20px;
+}
+.burger-menu h2,p{
+    text-align: center;
+
+}
+.burger-menu p{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.items{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.item{
+    width: 48%;
+    height: 320px;
+    position: relative;
+}
+.item-details{
+    position: absolute;
+    top: 0;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #fff;
+}
+.item-details .item-name{
+    font-size: 30px;
+}
+.item-details .item-price{
+    font-size: 24px;
+}
+.item .biriyani{
+    width: 100%;
+    height: 100%;
+}
+.buy-now-btn{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    background-color: red;
+    text-align: center;
+    padding: 12px 26px;
+    border-radius: 20px;
+}
+</style>
+<p style="background-color:grey;" </p>
+<div class="container">
+
+        <div class="burger-menu">
+
+          <h2 style="color:white;">Types of Biriyani</h2>
+          <p style="color:White;">One bite of  Biriyani can transport you to a world of spices, flavors, and pure bliss.</p>
+          <div class="items">
+            <div class="item">
+                <img src="static/images/thalassery1.jpg" width="450px" height="320px" alt="Thalassery Biriyani" class="Biriyani">
+                <div class="item-details">
+                    <h4 class="item-name">Thalassery Biriyani</h4>
+                    <h5 class="item-price">199/-</h5>
+                    <a href="" class="buy-now-btn">Taste Now</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="static/images/ambur.jpg" width="450px" height="320px" alt="Ambur Biriyani" class="biriyani">
+                <div class="item-details">
+                    <h4 class="item-name">Ambur Biriyani</h4>
+                    <h5 class="item-price">229/-</h5>
+                    <a href="" class="buy-now-btn">Taste now</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="static/images/dindigul1.jpg" width="450px" height="320px" alt="Dindigul Biriyani" class="Biriyani">
+                <div class="item-details">
+                    <h4 class="item-name">Dindigul Biriyani</h4>
+                    <h5 class="item-price">249/-</h5>
+                    <a href="" class="buy-now-btn">Taste Now</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="static/images/Mutton1.jpg" width="450px" height="320px" alt="Mutton Biriyani" class="Biriyani">
+                <div class="item-details">
+                    <h4 class="item-name">Special Mutton Biriyani</h4>
+                    <h5 class="item-price">449/-</h5>
+                    <a href="" class="buy-now-btn">Taste Now</a>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>

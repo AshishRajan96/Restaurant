@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mojitos</title>
+</head>
+<body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+:root{
+    --main-color: rgb(251, 251, 242);
+    --main-font: 'Open Sans', sans-serif;
+    --special-font: 'PT Serif', serif;;
+}
+*, * ::after, * ::before{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+ul, ol{
+    list-style: none;
+}
+body{
+    background-color: #292D36;
+    color:var(--main-color);
+    padding: 30px;
+    font-family: var(--main-font);
+}
+h1,h2,h3{
+    font-family: var(--special-font);
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+/* HEADER */
+.menu-wrapper{
+    max-width: 1000px;
+    padding: 30px 40px 40px 40px;
+    border: 2px solid var(--main-color);
+    margin: 0 auto;
+    background: url(https://cdn.pixabay.com/photo/2018/03/02/13/38/vegetables-3193196_960_720.jpg) center/cover;
+}
+
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 15px;
+}
+
+.logo-title-box{
+    width: fit-content;
+    height: 60px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: left;
+    gap: 1rem;
+    position: relative;
+}
+.header-logo{
+    width: 90px;
+    position: relative;
+    top: 12px;
+    border-radius: 50%;
+    fill: rgb(251, 251, 242);
+}
+.brewery-title{
+    display: flex;
+    flex-flow: column;
+    font-size: 1.5rem;
+    margin: 0;
+    text-transform: uppercase;
+    color: rgb(238, 187, 111);
+}
+.brewery-title span{
+    margin-top: -7px;
+    text-transform: none;
+
+}
+.main-header h2{
+    margin: 0;
+
+}
+.hr-first{
+    margin-top: .7rem;
+}
+
+.hr{
+    width: 100%;
+    height: 3px;
+
+
+}
+.hr-second{
+    margin-top: 8px;
+    height: 1.5px;
+}
+.dashed {
+    background: repeating-linear-gradient(to right, #FFFFFF 0%, #FFFFFF .8%, transparent .8%, transparent 1.6%);
+}
+
+.solid {
+    background: #FFFFFF;
+    height: 1.5px;
+    margin-top: 5px;
+}
+.beverages-section{
+    padding: 4rem  0 ;
+}
+.section-title{
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+.beverages-main-content{
+    display: flex;
+}
+.section-main-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 100%;
+    padding: 10px;
+}
+.beer-menu-list{
+    display: grid;
+    grid-template-columns:minmax(0, auto) 1fr minmax(0,auto);
+    row-gap: 15px;
+    place-items: end start;
+    width: 50%;
+    flex-grow: 1;
+}
+.beer-menu-list p{
+    margin: 0;
+    font-size: 1.1rem;
+}
+.beer-title-description p:nth-of-type(2){
+    font-size: .9rem;
+    opacity: 85%;
+}
+.beer-menu-hr{
+    height: 1px;
+    width: 70%;
+    margin: 0 auto;
+    background-color: var(--main-color);
+    margin-bottom: 5px;
+}
+.col-1{
+    grid-column: 1/2;
+}
+.col-2 {
+    grid-column: 2/3;
+
+}
+.col-3 {
+    grid-column: 3/4;
+}
+.price{
+    padding:0  5px;
+    background: rgba(159, 112, 19, 0.5);
+}
+.food-img{
+    height: 290px;
+}
+.main-footer{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width: 700px) {
+    .beverages-main-content{
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-main-img{
+        order: 1;
+        width: 70%;
+        height: unset;
+    }
+    .beer-menu-list{
+        order: 2;
+        margin-top: 1rem;
+        width: 100%;
+        max-width: 450px;
+    }
+}
+@media screen and (max-width: 450px){
+    html{
+        font-size: 12px;
+    }
+    .main-header{
+        flex-flow: column;
+        gap: 15px;
+        align-items: center;
+    }
+}
+</style>
+<div class="menu-wrapper">
+        <header class="main-header">
+            <div class="logo-title-box">
+              <svg viewBox="0 0 512 512" width="100" title="hamburger" class="header-logo">
+  <path d="M464 256H48a48 48 0 0 0 0 96h416a48 48 0 0 0 0-96zm16 128H32a16 16 0 0 0-16 16v16a64 64 0 0 0 64 64h352a64 64 0 0 0 64-64v-16a16 16 0 0 0-16-16zM58.64 224h394.72c34.57 0 54.62-43.9 34.82-75.88C448 83.2 359.55 32.1 256 32c-103.54.1-192 51.2-232.18 116.11C4 180.09 24.07 224 58.64 224zM384 112a16 16 0 1 1-16 16 16 16 0 0 1 16-16zM256 80a16 16 0 1 1-16 16 16 16 0 0 1 16-16zm-128 32a16 16 0 1 1-16 16 16 16 0 0 1 16-16z" />
+</svg>
+                <a href="#"><h1 class="brewery-title">Mojitos & Burgers<span></span></h1></a>
+            </div>
+            <h2 class="header-menu">MENU</h2>
+        </header>
+
+        <main class="main-content">
+            <div class="hr hr-first dashed"></div>
+            <div class="hr hr-second dashed"></div>
+            <!-- beberages-section -->
+            <section class="beverages-section">
+                <h3 class="section-title">Beverages</h3>
+                <div class="beverages-main-content">
+                    <img src="https://cdn.pixabay.com/photo/2016/06/10/06/00/lemonade-1447521_960_720.png" alt="Image of a Drink" class="section-main-img">
+                    <div class="beer-menu-list grid">
+                        <div class="beer-title-description col-1 grid-item">
+                            <p>Mojitos</p>
+                            <p>Tequila, lemon, mango</p>
+                        </div>
+                        <div class="beer-menu-hr col-2 grid-item"></div>
+                        <p class="price col-3 grid-item">₹120/-</p>
+                        <div class="beer-title-description col-1 grid-item">
+                            <p>Vine</p>
+                            <p>Grape,Mixed fruit</p>
+                        </div>
+                        <div class="beer-menu-hr col-2 grid-item"></div>
+                        <p class="price col-3 grid-item">₹80/-</p>
+                        <div class="beer-title-description col-1 grid-item">
+                            <p>Juices</p>
+                            <p>Apple,Pineapple,Watermelon,Orange,Mosambi</p>
+                        </div>
+                        <div class="beer-menu-hr col-2 grid-item"></div>
+                        <p class="price col-3 grid-item">₹110/-</p>
+                        <div class="beer-title-description col-1 grid-item">
+                            <p>Shakes</p>
+                            <p>Sharja,Chocolate,Strawberry,Blackcurrent,Oreo,Butterscotch</p>
+                        </div>
+                        <div class="beer-menu-hr col-2 grid-item"></div>
+                        <p class="price col-3 grid-item">₹130</p>
+                        <div class="beer-title-description col-1 grid-item">
+                            <p>Sodas</p>
+                            <p>Coca-Cola, Sprite, Fanta...</p>
+                        </div>
+                        <div class="beer-menu-hr col-2 grid-item"></div>
+                        <p class="price col-3 grid-item">₹40</p>
+
+                    </div>
+                </div>
+            </section>
+            <div class="hr solid hr-first"></div>
+            <div class="hr solid hr-second"></div>
+            <div class="hr solid hr-second"></div>
+            <div class="hr solid hr-second"></div>
+            <div class="hr hr-second dashed"></div>
+            <!-- FOOD-section -->
+            <section class="beverages-section">
+                <h3 class="section-title">Burgers</h3>
+                <div class="beverages-main-content">
+                    <div class="beer-menu-list grid">
+                        <div class="beer-title-description col-1 grid-item">
+                            <p>Chicken Burger</p>
+                            <p></p>
+                        </div>
+                        <div class="beer-menu-hr col-2 grid-item"></div>
+                        <p class="price col-3 grid-item">₹160/-</p>
+                        <div class="beer-title-description col-1 grid-item">
+                            <p>Egg Burger</p>
+                        </div>
+                        <div class="beer-menu-hr col-2 grid-item"></div>
+                        <p class="price col-3 grid-item">₹130/-</p>
+                        <div class="beer-title-description col-1 grid-item">
+                            <p>Vegetable Burger</p>
+                        </div>
+                        <div class="beer-menu-hr col-2 grid-item"></div>
+                        <p class="price col-3 grid-item">₹100/-</p>
+                        <div class="beer-title-description col-1 grid-item">
+                            <p>Tuna Burger</p>
+                        </div>
+                        <div class="beer-menu-hr col-2 grid-item"></div>
+                        <p class="price col-3 grid-item">₹140/-</p>
+                        <div class="beer-title-description col-1 grid-item">
+                            <p>Mushroom Burger</p>
+                        </div>
+                        <div class="beer-menu-hr col-2 grid-item"></div>
+                        <p class="price col-3 grid-item">₹200/-</p>
+                    </div>
+
+                    <img src="https://cdn.pixabay.com/photo/2012/04/05/00/36/hamburger-25357_960_720.png" alt="Image of a Beer" class="section-main-img food-img">
+
+                </div>
+            </section>
+
+            <div class="hr solid hr-second"></div>
+            <div class="hr hr-second dashed"></div>
+            <footer class="main-footer">
+                <span>* A burger for your taste buds</span>
+
+            </footer>
+        </main>
+    </div>
+
+</body>
+</html>
